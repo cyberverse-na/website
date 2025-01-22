@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Addiction Classes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f0f0f0; /* Light background */
+    }
+
+    header {
+      background-color: #4CAF50; /* Green background */
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #333; /* Dark color for contrast */
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: block;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      background: #575757; /* Slightly lighter hover effect */
+      transform: scale(1.1); /* Slight scaling on hover */
+    }
+
+    /* Sliding images section */
+    .slider {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .slider-container {
+      display: flex;
+      width: 100%;
+      animation: slide 20s linear infinite;
+    }
+
+    .slider img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    /* Animation for sliding images */
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-100%); }
+      50% { transform: translateX(-200%); }
+      75% { transform: translateX(-300%); }
+      100% { transform: translateX(-400%); }
+    }
+
+    .content {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+      background: white; /* White background for content */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      margin-top: 20px;
+      border-radius: 8px; /* Rounded corners */
+    }
+
+    .services {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      flex-wrap: wrap; /* Ensure the services stack on small screens */
+    }
+
+    .service {
+      flex: 1;
+      margin: 10px;
+      text-align: center;
+      padding: 20px;
+      background: #f9f9f9; /* Light background */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background: #333; /* Dark footer to match the navigation */
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+    /* Study Material section */
+    #study-material {
+      padding: 20px;
+      background: #e0e0e0; /* Light grey background for study material section */
+      text-align: center;
+    }
+
+    /* Link styling for Study Material */
+    #study-material a {
+      color: #4CAF50; /* Matching green from the logo */
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #study-material a:hover {
+      color: #333; /* Dark color for hover effect */
+    }
+
+    /* Media Query for smaller screens */
+    @media (max-width: 768px) {
+      .services {
+        flex-direction: column; /* Stack services on smaller screens */
+        align-items: center;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        padding: 10px 0;
+      }
+
+      .slider img {
+        height: 300px; /* Adjust image height on smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <!-- Logo Section -->
+  <img src="/pages/logo.png" alt="Addiction Classes Logo" style="width: 150px; height: auto; border-radius: 50%;">
+  <h1>Welcome to Addiction Classes</h1>
+</header>
+
+<nav>
+  <a href="/pages/about.html">About Us</a>
+  <a href="/pages/services.html">Services</a>
+  <a href="/pages/study.html">Study Material</a> <!-- Added link for Study Material -->
+  <a href="/pages/contact.html">Contact</a>
+</nav>
+
+<!-- Sliding images section -->
+<div class="slider">
+  <div class="slider-container">
+    <img src="/pages/image 1.jpg" alt="Coaching Image 1">
+    <img src="/pages/image 2.jpg" alt="Coaching Image 2">
+    <img src="/pages/image 3.jpg" alt="Coaching Image 3">
+    <img src="/pages/image 4.jpg" alt="Coaching Image 4">
+    <img src="/pages/image 5.jpg" alt="Coaching Image 5">
+    <img src="/pages/image 6.jpg" alt="Coaching Image 6">
+    <img src="/pages/image 7.jpg" alt="Coaching Image 7">
+  </div>
+</div>
+
+<div class="content" id="about">
+  <h2>About Us</h2>
+  <p>Addiction Classes is dedicated to helping individuals overcome addiction and build a better future. We provide specialized programs and personal coaching to help people regain control of their lives.</p>
+</div>
+
+<div class="content" id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service">
+      <h3>One-on-One Coaching</h3>
+      <p>Personalized coaching sessions designed to address individual needs and goals.</p>
+    </div>
+    <div class="service">
+      <h3>Group Therapy</h3>
+      <p>Supportive group sessions that foster shared experiences and motivation.</p>
+    </div>
+    <div class="service">
+      <h3>Recovery Programs</h3>
+      <p>Structured programs focused on long-term recovery and relapse prevention.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Study Material Section -->
+<div class="content" id="study-material">
+  <h2>Study Material</h2>
+  <p>We offer a variety of study materials to help you succeed in overcoming addiction. You can download the resources by clicking the links below:</p>
+  <ul>
+    <li><a href="https://drive.google.com/file/d/1DBPVS6y0TCVzWLGU4MhvC6g_UFTYB8DL/view?usp=drive_link" target="_blank">DPPs</a></li>
+    <li><a href="https://drive.google.com/file/d/1ZBbJqmCXfH1LBGXjMJFgfojo9FIfD11x/view?usp=drive_link" target="_blank">Mind Map</a></li>
+    <li><a href="https://drive.google.com/file/d/1NlptwfodbolpZOjnqjCGVdDqOTbLGhBz/view?usp=drive_link" target="_blank">Notes</a></li>
+  </ul>
+</div>
+
+<div class="content" id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: contact@addictionclasses.com</p>
+  <p>Phone: +91 8817751179</p>
+  <p>Address: Infront of NRI Global Discovery School, Neas AIIMS gate.no. 4 , Bhopal</p>
+</div>
+
+<footer>
+  <p>&copy; 2025 Addiction Classes. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

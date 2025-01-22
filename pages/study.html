@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Material - Addiction Classes</title>
+  <style>
+    /* Apply full height to the body and set it to flex */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Make sure the body takes the full height of the viewport */
+    }
+
+    /* Header Styling with Fade-In Animation */
+    header {
+      background: #4CAF50; /* Green background */
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      animation: fadeIn 1s ease-out;
+    }
+
+    /* Animation for the header */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Navigation Styling with Hover Animation */
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #333;
+      animation: slideIn 1s ease-out;
+    }
+
+    /* Hover effect for navigation links */
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: block;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+      transform: scale(1.1);
+    }
+
+    /* Animation for navigation */
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* Main Content Styling with Animation */
+    .content {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 20px auto;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      flex-grow: 1;
+      animation: fadeInContent 1s ease-in-out;
+    }
+
+    /* Animation for content */
+    @keyframes fadeInContent {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Button Styling with Hover Effects */
+    .class-buttons a {
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      padding: 15px 25px;
+      border-radius: 5px;
+      width: 200px;
+      text-align: center;
+      display: block;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+    }
+
+    /* Hover effect for buttons */
+    .class-buttons a:hover {
+      background-color: #45a049;
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Footer Styling with Animation */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+      animation: fadeInFooter 1s ease-out;
+    }
+
+    /* Animation for footer */
+    @keyframes fadeInFooter {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Footer links styling */
+    footer a {
+      text-decoration: dashed;
+      font-size: medium;
+      color: white;
+      padding: 0 10px;
+    }
+
+    /* Footer links hover effect */
+    footer a:hover {
+      text-decoration: underline;
+      color: #4CAF50;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Study Material</h1>
+</header>
+
+<nav>
+  <a href="about.html">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+  <a href="/index.html">Home</a>
+</nav>
+
+<div class="content">
+  <h1>Available Study Materials</h1>
+  
+  <!-- Links for selecting classes 5th to 10th -->
+  <div class="class-buttons">
+    <a href="/class/5th class.html">5th class study material</a>
+    <a href="/class/6th class.html">6th class study material</a>
+    <a href="/class/7th class.html">7th class study material</a>
+    <a href="/class/8th class.html">8th class study material</a>
+    <a href="/class/9th class.html">9th class study material</a>
+    <a href="/class/10th class.html">10th class study material</a>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Addiction Classes. All Rights Reserved.</p>
+  <div>
+    <a href="terms.html">Terms of Service</a> | <a href="contact.html">Contact Us</a>
+  </div>
+</footer>
+
+</body>
+</html>

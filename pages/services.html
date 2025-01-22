@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      animation: fadeInPage 1s ease-in-out;
+    }
+
+    @keyframes fadeInPage {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    header {
+      background: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      animation: slideIn 1s ease-out;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      animation: slideInNav 1s ease-out;
+    }
+
+    @keyframes slideInNav {
+      from {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: block;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+      transform: scale(1.05);
+    }
+
+    .content {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      animation: fadeInContent 1s ease-in-out;
+    }
+
+    @keyframes fadeInContent {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .services {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .service {
+      background: #fff;
+      padding: 20px;
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .service h3 {
+      margin-top: 0;
+      color: #4CAF50;
+      animation: fadeInService 1s ease-in-out;
+    }
+
+    @keyframes fadeInService {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .service p {
+      color: #555;
+      animation: fadeInText 1s ease-in-out;
+    }
+
+    @keyframes fadeInText {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+      animation: fadeInFooter 1s ease-out;
+    }
+
+    @keyframes fadeInFooter {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our Services</h1>
+  </header>
+
+  <nav>
+    <a href="about.html">About Us</a>
+    <a href="study.html">Study Material</a>
+    <a href="contact.html">Contact</a>
+    <a href="/index.html">Home</a>
+  </nav>
+
+  <div class="content">
+    <h2>Services We Offer</h2>
+    <p>We provide a wide range of services to help students in their educational journey. Below are the services we offer:</p>
+
+    <div class="services">
+      <div class="service">
+        <h3>One-on-One Coaching</h3>
+        <p>Our personalized coaching sessions help students with individual attention and support tailored to their needs.</p>
+      </div>
+
+      <div class="service">
+        <h3>Group Classes</h3>
+        <p>Interactive group classes that promote learning through collaboration, peer discussions, and group exercises.</p>
+      </div>
+
+      <div class="service">
+        <h3>Online Tutorials</h3>
+        <p>Access to online tutorials and video lessons for flexible learning at your own pace and convenience.</p>
+      </div>
+
+      <div class="service">
+        <h3>Study Material</h3>
+        <p>Comprehensive study material and resources available to help students grasp key concepts easily.</p>
+      </div>
+
+      <div class="service">
+        <h3>Mock Tests</h3>
+        <p>We offer mock tests to assess students’ understanding and prepare them for exams with realistic practice.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Addiction Classes. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
