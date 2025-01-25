@@ -157,9 +157,74 @@
 <nav>
   <a href="pages/about.html">About Us</a>
   <a href="pages/services.html">Services</a>
-  <a href="pages/study.html">Study Material</a> <!-- Added link for Study Material -->
+  <!-- Dropdown for Study Material -->
+  <div class="dropdown">
+    <a href="pages/study.html" class="dropbtn">Study Material</a> <!-- Main link -->
+    <div class="dropdown-content">
+      <a href="class/5th class.html" target="_blank">Class 5th</a>
+      <a href="class/6th class.html" target="_blank">Class 6th</a>
+      <a href="class/7th class.html" target="_blank">Class 7th</a>
+      <a href="class/8th class.html" target="_blank">Class 8th</a>
+      <a href="class/9th class.html" target="_blank">Class 9th</a>
+      <a href="class/10th class.html" target="_blank">Class 10th</a>
+    </div>
+  </div>
   <a href="pages/contact.html">Contact</a>
 </nav>
+
+<style>
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button styling */
+.dropbtn {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: #333; /* Dark background for dropdown */
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+  display: block;
+  transition: background 0.3s ease;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+  background-color: #575757;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Highlight the main dropdown button on hover */
+.dropdown:hover .dropbtn {
+  background-color: #575757;
+  transform: scale(1.1); /* Slight scale effect */
+}
+</style>
+
 
 <!-- Sliding images section -->
 <div class="slider">
